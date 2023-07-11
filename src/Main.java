@@ -10,7 +10,7 @@ class Car extends Vehicle{
         System.out.println( "Car stopped.");
     }
 }
-class MotorCycle{
+class MotorCycle extends Vehicle {
     public void start(){
         System.out.println("MotorCycle started.");
     }
@@ -20,10 +20,10 @@ class MotorCycle{
 }
 public class Main {
     public static void main(String[] args) {
-        MotorCycle motorCycle=new MotorCycle();
+        Vehicle motorCycle=new MotorCycle();
         motorCycle.start();
         motorCycle.stop();
-        Car car=new Car();
+       Vehicle car=new Car();
         car.start();
         car.stop();
     }
